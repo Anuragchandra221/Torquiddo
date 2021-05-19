@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    line-height: 1.7em;
+    position: relative;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Stranger\ back\ in\ the\ Night.ttf);
+}
+.tor{
+    font-family: myFirstFont;
+    font-size: 2em;
+}
+header{
+    background-image: url('images/tor8.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+input::placeholder{
+    padding: 2px;
+    text-align: start;
+}
+
+.frontButton{
+    width: max-content;
+    background-color: #c3073f;
+    color: #FFFFFF;
+    height: auto;
+    opacity: 1;
+    clear: both;
+}
+.btn:hover{
+    color: white;
+    background-color: #94153b;
+}
+button:hover{
+    background-color: #94153b;
+}
+#services{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+@keyframes anim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(150, 146, 146);
+    display: inline-block;
+}
+.active{
+    background-color: rgb(19, 18, 18);
+}
+.effect{
+    animation-name: effect;
+    animation-duration: 2s;
+}
+.last{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #f72060;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+@keyframes effect{
+    from{
+        opacity: 0.6;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 768px){
+    .box0{
+        border-right: 1px solid rgba(247, 32,96, .6);;
+        /*box-shadow: 0 4px 20px 0 rgba(247, 32, 96, 0.2), 0 6px 20px 0 rgba(247, 32, 96, .6);*/
+    }
+    .line{
+        display: none;
+    }
+    .tor{
+        font-size: 2.5em;
+    }
+}
